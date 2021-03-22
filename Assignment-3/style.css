@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.row {
+  position: relative;
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  height: 115px;
+  background-color: C2C5CC;
+}
+
+.section > h {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px;
+  width: 20%;
+  border: 1px solid black;
+  font-size: 1.25em;
+  clear: both;
+}
+
+#beef {
+  background-color: red;
+}
+#chicken {
+  background-color: green;
+}
+#shrimp {
+  background-color: skyblue;
+}
+
+#credits {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.section > p {
+  padding-top: 20px;
+}
+
+/* small screens */
+@media (max-width: 767px){
+  .col-sm-12 {
+    float: left;
+    border: 1px solid black;
+    margin: 2.5%;
+  }
+  .col-sm-12 {
+    width: 95%;
+  }
+}
+/* medium-sized screens */
+@media (min-width: 768px) and (max-width: 991px){
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid black;
+    margin: 2.5%; /* x2 for right and left sides = 5% margin */
+  }
+  .col-md-6 {
+    width: 45%;
+  }
+  .col-md-12 {
+    width: 95%;
+  }
+}
+/* large screens */
+@media (min-width: 992px){
+  .col-lg-4 {
+    float: left;
+    border: 1px solid black;
+    margin: 2%
+  }
+  .col-lg-4 {
+    width: 29.33%;
+  }
+}
